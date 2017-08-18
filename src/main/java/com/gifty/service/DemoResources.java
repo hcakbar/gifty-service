@@ -13,4 +13,8 @@ public class DemoResources {
     public String getResource() {
         return "hello";
     }
+
+    public int addTwoNumbers(int firstNum, int secondNum) {
+        return firstNum + secondNum;
+    }
 }
