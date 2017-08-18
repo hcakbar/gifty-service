@@ -18,7 +18,7 @@ public class DemoResourcesTest {
 
     @Test
     public void testAddTwoNumbers() {
-        assertEquals(5, demoResources.addTwoNumbers(3, 3));
+        assertEquals(6, demoResources.addTwoNumbers(3, 3));
     }
 
 }
