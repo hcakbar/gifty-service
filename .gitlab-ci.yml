@@ -20,7 +20,7 @@ maven-build:
       - target/*.jar
 
 deploy:
-  image: python:lattest
+  image: python:latest
   script:
   - pip install awscli
   - aws s3 cp ./ s3://yourbucket/ --recursive --exclude "*" --include "*.html"
