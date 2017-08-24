@@ -30,7 +30,6 @@ public class DbSeeder implements CommandLineRunner {
                 "Rah"
         );
         this.usersRepository.deleteAll();
-
         List<Users> usersList = Arrays.asList(users1, users2);
         this.usersRepository.save(usersList);
     }
