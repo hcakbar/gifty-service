@@ -1,6 +1,6 @@
-package com.gifty.service;
+package repository;
 
-import org.springframework.boot.autoconfigure.data.mongo.MongoRepositoriesAutoConfiguration;
+import domain.Users;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,6 +10,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UsersRepository extends MongoRepository<Users, String> {
-
 
 }
