@@ -1,9 +1,15 @@
 [
   {
-    "name": "PlayStation",
+    "name": "Xbox One",
+    "description": "Own the Xbox One S Gears of War 4 Bundle (1TB), featuring a full game download of Gears of War 4 for Xbox One and Windows 10, 4K Ultra HD video, and High Dynamic Range. Experience a new generation of Gears of War with the sleeker, more streamlined Xbox console and controller. Play and store more games, including Xbox 360 classics, with the 1TB hard drive. Stream video and watch UHD Blu-ray™ movies in stunning 4K Ultra HD. And now you can enjoy the freedom to play Gears of War 4 on another Xbox One or Windows 10 PC, so you can make shared progress across multiple devices. As one of the most acclaimed video game franchises in history, everything you love about Gears of War is even better on Xbox One.",
+    "price": "$349.99",
+    "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5613/5613802_sd.jpg"
+  },
+  {
+    "name": "Play Station 4",
     "description": "The PlayStation Portable became the most powerful portable system when launched",
-    "price": "$300",
-    "url": "https://en.wikipedia.org/wiki/PlayStation_Portable#/media/File:PSP_E1000_illustration.svg"
+    "price": "$299.99",
+    "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5850/5850905_sd.jpg"
   },
   {
     "name": "PS4",
@@ -14,19 +20,13 @@
   {
     "name": "Nintendo Switch",
     "description": "The Nintendo Switch[b] is the seventh major video game console developed by Nintendo. Known in development by its codename NX, it was unveiled in October 2016 and was released worldwide on March 3, 2017. ",
-    "price": "$500",
-    "url": "https://en.wikipedia.org/wiki/Nintendo_Switch#/media/File:Nintendo-Switch-JoyCon-Grip-FL.jpg"
+    "price": "$299.99",
+    "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5670/5670003_sd.jpg"
   },
   {
-    "name": "Xbox",
-    "description": "Xbox is a video gaming brand created and owned by Microsoft. It represents a series of video game consoles developed by Microsoft, with three consoles released in the sixth, seventh, and eighth generations respectively. The brand also represents applications (games), streaming services, and an online service by the name of Xbox Live. The brand was first introduced on November 15, 2001 in the United States, with the launch of the original Xbox console",
-    "price": "$600",
-    "url": "https://en.wikipedia.org/wiki/Xbox#/media/File:Xbox-console.jpg"
-  },
-  {
-    "name": "Xbox 360",
-    "description": "The Xbox 360 is a home video game console developed by Microsoft. As the successor to the original Xbox, it is the second console in the Xbox series. It competed with Sony's PlayStation 3 and Nintendo's Wii as part of the seventh generation of video game consoles. It was officially unveiled on MTV on May 12, 2005, with detailed launch and game information announced later that month at the E3 expo.",
-    "price": "$900",
-    "url": "https://en.wikipedia.org/wiki/Xbox_360#/media/File:Xbox-360S-Console-Set.jpg"
+    "name": "Sega - Genesis Flashback",
+    "description": "Relive the 16-bit classics with this Sega Genesis Flashback console. Its built-in 85 games include Sonic, Mortal Kombat and Phantasy Star titles in HD, and it has a cartridge slot to let you play more of your favorite Genesis and Mega Drive games. This Sega Genesis Flashback console comes with two 2.4GHz wireless controllers for smooth remote setups.",
+    "price": "$69.99",
+    "url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5901/5901952_sd.jpg"
   }
 ]

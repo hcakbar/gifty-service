@@ -17,7 +17,7 @@ public class SmokeTest extends TestHelper{
     private static String uri = "http://localhost:8080/"; //TODO move to properties
     private static ResponseEntity<String> response;
 
-    @Test @Ignore("test can't access to the url")
+    @Test
     public void verifyHealth() {
         response = resourceClient(uri + "health", HttpMethod.GET);
         assertEquals("Failed, status code mismatch", 200, response.getStatusCodeValue());
