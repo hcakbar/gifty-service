@@ -15,6 +15,7 @@ import java.util.List;
 @Service
 public class ProductService {
 
+    //TODO load from mongodb
     private final String test_data = new File(getClass().getClassLoader()
                                                         .getResource("TestData.json")
                                                         .getFile()).getAbsolutePath();
@@ -32,5 +33,32 @@ public class ProductService {
 
         return products;
     }
+
+    public Product getProductById(String id) {
+        //TODO if this service class is used then reduce the duplicate
+        Type type = new TypeToken<Collection<Product>>() {}.getType();
+        Gson gson = new Gson();
+        List<Product> products;
+        try {
+            products = gson.fromJson(new JsonReader(new FileReader(test_data)), type);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(String.format("Could not read file from %s", test_data));
+        }
+        return products.stream().filter(t -> t.getId().equals(id)).findAny().get();
+    }
+
+    public void addProduct(Product product) {
+        //TODO if this service class is used then reduce the duplicate
+        Type type = new TypeToken<Collection<Product>>() {}.getType();
+        Gson gson = new Gson();
+        List<Product> products;
+        try {
+            products = gson.fromJson(new JsonReader(new FileReader(test_data)), type);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(String.format("Could not read file from %s", test_data));
+        }
+        products.add(product);
+    }
+
 
 }

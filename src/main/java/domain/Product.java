@@ -1,8 +1,15 @@
 package domain;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.io.Serializable;
 
+@Document(collection = "Product")
 public class Product implements Serializable {
 
+    @Id
+    private String id;
     private String name;
     private String description;
     private String price;
@@ -12,12 +19,20 @@ public class Product implements Serializable {
 
     }
 
-    public Product(String name, String description, String price, String url) {
-
+    public Product(String id, String name, String description, String price, String url) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.url = url;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -64,10 +79,11 @@ public class Product implements Serializable {
     public String toString() {
 
         return "Product{" +
-            "name='" + name + '\'' +
-            ", description='" + description + '\'' +
-            ", price='" + price + '\'' +
-            ", url='" + url + '\'' +
-            '}';
+                "id='" + id + '\''+
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price='" + price + '\'' +
+                ", url='" + url + '\'' +
+                '}';
     }
 }
