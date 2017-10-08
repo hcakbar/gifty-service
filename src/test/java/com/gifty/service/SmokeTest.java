@@ -1,8 +1,6 @@
 package com.gifty.service;
 
 import com.gifty.service.helper.TestHelper;
-import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +12,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class SmokeTest extends TestHelper{
 
-    private static String uri = "http://localhost:8080/"; //TODO move to properties
+    private static String uri = "http://localhost:8080/product/v1/"; //TODO move to properties
     private static ResponseEntity<String> response;
 
     @Test

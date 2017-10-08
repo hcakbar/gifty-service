@@ -1,4 +1,4 @@
-package controller;
+package com.gifty.service;
 
 /**
  *Contains all the Request Mapping constants of String literals

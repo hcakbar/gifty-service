@@ -1,17 +1,20 @@
-package domain;
+package com.gifty.service;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.IndexDirection;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 
-@Document(collection = "Product")
-public class Product implements Serializable {
+@Document(collection = "com.gifty.service.Product")
+public class Product {
 
     @Id
     private String id;
     private String name;
     private String description;
+    @Indexed(direction = IndexDirection.ASCENDING) //can use to filter by price
     private String price;
     private String url;
 
@@ -36,54 +39,36 @@ public class Product implements Serializable {
     }
 
     public String getName() {
-
         return name;
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
     public String getDescription() {
-
         return description;
     }
 
     public void setDescription(String description) {
-
         this.description = description;
     }
 
     public String getPrice() {
-
         return price;
     }
 
     public void setPrice(String price) {
-
         this.price = price;
     }
 
     public String getUrl() {
-
         return url;
     }
 
     public void setUrl(String url) {
-
         this.url = url;
     }
 
-    @Override
-    public String toString() {
 
-        return "Product{" +
-                "id='" + id + '\''+
-                "name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", price='" + price + '\'' +
-                ", url='" + url + '\'' +
-                '}';
-    }
 }
