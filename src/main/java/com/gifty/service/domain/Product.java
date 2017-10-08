@@ -1,13 +1,11 @@
-package com.gifty.service;
+package com.gifty.service.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.io.Serializable;
-
-@Document(collection = "com.gifty.service.Product")
+@Document(collection = "product")
 public class Product {
 
     @Id
@@ -17,10 +15,6 @@ public class Product {
     @Indexed(direction = IndexDirection.ASCENDING) //can use to filter by price
     private String price;
     private String url;
-
-    public Product() {
-
-    }
 
     public Product(String id, String name, String description, String price, String url) {
         this.id = id;

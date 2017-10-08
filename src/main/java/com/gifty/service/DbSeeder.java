@@ -1,5 +1,6 @@
 package com.gifty.service;
 
+import com.gifty.service.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

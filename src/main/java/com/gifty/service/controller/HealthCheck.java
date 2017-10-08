@@ -1,5 +1,6 @@
-package com.gifty.service;
+package com.gifty.service.controller;
 
+import com.gifty.service.utils.MappingConstants;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

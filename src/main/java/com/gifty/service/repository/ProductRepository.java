@@ -1,5 +1,6 @@
-package com.gifty.service;
+package com.gifty.service.repository;
 
+import com.gifty.service.domain.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

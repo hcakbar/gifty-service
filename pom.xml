@@ -4,18 +4,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gifty</groupId>
-    <artifactId>service</artifactId>
+    <artifactId>gifty-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>service</name>
-    <description>gifty service project</description>
+    <name>com.gifty.service.service</name>
+    <description>gifty com.gifty.service.service project</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.7.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent fcom.gifty.service.repositorytory -->
     </parent>
 
     <properties>

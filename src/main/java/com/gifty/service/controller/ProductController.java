@@ -1,5 +1,8 @@
-package com.gifty.service;
+package com.gifty.service.controller;
 
+import com.gifty.service.utils.MappingConstants;
+import com.gifty.service.domain.Product;
+import com.gifty.service.repository.ProductRepository;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,14 +17,6 @@ public class ProductController {
     public ProductController(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
-
-//    @Autowired
-//    private ProductService productService;
-
-//    @GetMapping(value = MappingConstants.ALL)
-//    public List<com.gifty.service.Product> getAllProducts() {
-//        return productService.getAllProducts();
-//    }
 
     @GetMapping(MappingConstants.ALL)
     public List<Product> getAllProducts() {
@@ -39,9 +34,9 @@ public class ProductController {
         this.productRepository.save(product);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable("id") String id) {
-        this.productRepository.delete(id);
+    @DeleteMapping()
+    public void deleteProduct(Product product) {
+        this.productRepository.delete(product);
     }
 
 
