@@ -8,14 +8,14 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>com.gifty.service.service</name>
-    <description>gifty com.gifty.service.service project</description>
+    <name>gifty-service</name>
+    <description>Gifty Service</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.7.RELEASE</version>
-        <relativePath/> <!-- lookup parent fcom.gifty.service.repositorytory -->
+        <relativePath/>
     </parent>
 
     <properties>
@@ -43,54 +43,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-web</artifactId>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
-            <!--&lt;!&ndash;<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<artifactId>spring-boot-starter-data-rest</artifactId>&ndash;&gt;-->
-        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
-            <!--&lt;!&ndash;<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<artifactId>spring-boot-devtools</artifactId>&ndash;&gt;-->
-        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
-
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-test</artifactId>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
-            <!--&lt;!&ndash;<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<artifactId>spring-boot-starter-tomcat</artifactId>&ndash;&gt;-->
-        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
-
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
-            <!--<version>1.5.6.RELEASE</version>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
-            <!--&lt;!&ndash;<groupId>com.google.code.gson</groupId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<artifactId>gson</artifactId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<version>2.8.1</version>&ndash;&gt;-->
-        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
-            <!--&lt;!&ndash;<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<artifactId>spring-boot-starter-actuator</artifactId>&ndash;&gt;-->
-        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
-        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
-            <!--&lt;!&ndash;<groupId>org.mongodb</groupId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<artifactId>mongo-java-driver</artifactId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<version>3.4.2</version>&ndash;&gt;-->
-        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
-
 
         <dependency>
             <groupId>org.sonarsource.scanner.maven</groupId>
