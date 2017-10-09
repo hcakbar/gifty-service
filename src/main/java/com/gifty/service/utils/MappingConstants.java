@@ -5,6 +5,6 @@ package com.gifty.service.utils;
  */
 public class MappingConstants {
 
-    public static final String PRODUCTS = "/product/v1";
+    public static final String PRODUCTS = "/product/v1"; //TODO revisit this
     public static final String ALL      = "/all";
 }

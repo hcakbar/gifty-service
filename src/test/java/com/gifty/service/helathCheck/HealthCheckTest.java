@@ -14,6 +14,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class HealthCheckTest {
 
+    //This check is for temp during the development, will remove healthCheck later.
     private static String uri = "http://localhost:8080/product/v1/";
     private static ResponseEntity<String> response;
     private static HttpHeaders headers;
