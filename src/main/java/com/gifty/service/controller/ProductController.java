@@ -1,8 +1,10 @@
 package com.gifty.service.controller;
 
-import com.gifty.service.utils.MappingConstants;
 import com.gifty.service.domain.Product;
 import com.gifty.service.repository.ProductRepository;
+import com.gifty.service.utils.MappingConstants;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,32 +14,32 @@ import java.util.List;
 @RequestMapping(value = MappingConstants.PRODUCTS, produces = MediaType.APPLICATION_JSON_VALUE)
 public class ProductController {
 
+    @Autowired
     private ProductRepository productRepository;
-
-    public ProductController(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
 
     @GetMapping(MappingConstants.ALL)
     public List<Product> getAllProducts() {
-        List<Product> products = this.productRepository.findAll();
-        return products;
+
+        return productRepository.findAll();
     }
 
-    @PostMapping
+    @PostMapping(MappingConstants.ADD)
+    @ResponseStatus(HttpStatus.CREATED)
     public void addProduct(@RequestBody Product product) {
-        this.productRepository.insert(product);
+
+        productRepository.insert(product);
     }
 
     @PutMapping
     public void updateProduct(@RequestBody Product product) {
-        this.productRepository.save(product);
+
+        productRepository.save(product);
     }
 
     @DeleteMapping()
     public void deleteProduct(Product product) {
-        this.productRepository.delete(product);
-    }
 
+        productRepository.delete(product);
+    }
 
 }

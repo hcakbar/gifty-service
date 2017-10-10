@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface RegistryEventRepository extends MongoRepository<RegistryEvent, String>{
-
+public interface RegistryEventRepository extends MongoRepository<RegistryEvent, String> {
 
 }

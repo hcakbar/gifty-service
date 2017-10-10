@@ -1,6 +1,7 @@
 package com.gifty.service.domain;
 
 import org.junit.Test;
+
 import static junit.framework.TestCase.assertTrue;
 
 /**
@@ -12,10 +13,10 @@ public class ProductTest {
 
     @Test
     public void checkProduct() {
-        String description = "This is description";
-        product = new Product("", "", description, "", "");
-       assertTrue(product.getDescription().equals(description));
-    }
 
+        String description = "This is description";
+        product = new Product("", description, "", "");
+        assertTrue(product.getDescription().equals(description));
+    }
 
 }

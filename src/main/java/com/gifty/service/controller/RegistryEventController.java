@@ -2,6 +2,9 @@ package com.gifty.service.controller;
 
 import com.gifty.service.domain.RegistryEvent;
 import com.gifty.service.repository.RegistryEventRepository;
+import com.gifty.service.utils.MappingConstants;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,26 +15,24 @@ import java.util.List;
  */
 
 @RestController
-@RequestMapping(value = "/registryEvent", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = MappingConstants.REGISTRY_EVENT, produces = MediaType.APPLICATION_JSON_VALUE)
 public class RegistryEventController {
 
+    @Autowired
     private RegistryEventRepository registryEventRepository;
 
-    public RegistryEventController(RegistryEventRepository registryEventRepository) {
-        this.registryEventRepository = registryEventRepository;
-    }
-
-    @GetMapping()
+    @GetMapping(MappingConstants.ALL)
+    @ResponseStatus(HttpStatus.FOUND)
     public List<RegistryEvent> getAllRegistryEvents() {
-        List<RegistryEvent> events = this.registryEventRepository.findAll();
-        return events;
+
+        return registryEventRepository.findAll();
     }
 
-    @PostMapping
+    @PostMapping(MappingConstants.ADD)
+    @ResponseStatus(HttpStatus.OK)
     public void addRegistryEvent(@RequestBody RegistryEvent registryEvent) {
-        this.registryEventRepository.save(registryEvent);
+
+        registryEventRepository.save(registryEvent);
     }
-
-
 
 }
