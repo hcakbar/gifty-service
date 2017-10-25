@@ -19,26 +19,22 @@ public class ProductController {
 
     @GetMapping(MappingConstants.ALL)
     public List<Product> getAllProducts() {
-
         return productRepository.findAll();
     }
 
     @PostMapping(MappingConstants.ADD)
     @ResponseStatus(HttpStatus.CREATED)
     public void addProduct(@RequestBody Product product) {
-
         productRepository.insert(product);
     }
 
     @PutMapping
     public void updateProduct(@RequestBody Product product) {
-
         productRepository.save(product);
     }
 
     @DeleteMapping()
     public void deleteProduct(Product product) {
-
         productRepository.delete(product);
     }
 

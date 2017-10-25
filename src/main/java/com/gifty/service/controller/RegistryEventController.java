@@ -24,14 +24,12 @@ public class RegistryEventController {
     @GetMapping(MappingConstants.ALL)
     @ResponseStatus(HttpStatus.FOUND)
     public List<RegistryEvent> getAllRegistryEvents() {
-
         return registryEventRepository.findAll();
     }
 
     @PostMapping(MappingConstants.ADD)
     @ResponseStatus(HttpStatus.OK)
     public void addRegistryEvent(@RequestBody RegistryEvent registryEvent) {
-
         registryEventRepository.save(registryEvent);
     }
 

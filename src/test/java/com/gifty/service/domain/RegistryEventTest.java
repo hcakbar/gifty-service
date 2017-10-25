@@ -13,7 +13,6 @@ public class RegistryEventTest {
 
     @Test
     public void checkRegistryEvent() {
-
         registryEvent = new RegistryEvent(false, "", "", "", "");
         assertTrue(!registryEvent.isRegistryOwner());
     }

@@ -27,7 +27,6 @@ public class ProductControllerTest {
 
     @Test
     public void verifyGetAllProduct() {
-
         List list = new ArrayList();
         list.add("blah");
         when(productRepository.findAll()).thenReturn(list);

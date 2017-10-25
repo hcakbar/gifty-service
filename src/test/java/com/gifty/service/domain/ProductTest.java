@@ -13,7 +13,6 @@ public class ProductTest {
 
     @Test
     public void checkProduct() {
-
         String description = "This is description";
         product = new Product("", description, "", "");
         assertTrue(product.getDescription().equals(description));
