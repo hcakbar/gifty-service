@@ -1,5 +1,5 @@
 
-Gifty Service
+Gifty micro services
 
 ## Instruction
 ### Sonar Analysis/SonarQube
