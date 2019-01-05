@@ -2,7 +2,7 @@
 ### Gifty
 Services for gifty app. 
 
-```Java, Spring MVC, Maven```
+```Java, Spring MVC, Maven, MongoDB```
 
 * APIs 
 1. Register events
