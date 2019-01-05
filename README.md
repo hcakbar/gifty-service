@@ -1,8 +1,16 @@
 
-Gifty micro services
+### Gifty
+Services for gifty app. 
+* APIs 
+1. Register events
+2. Send invitation
+3. Add, update, delete products.
+4. Get product status
 
-## Instruction
-### Sonar Analysis/SonarQube
+
+#### Instruction
+
+##### Sonar Analysis/SonarQube
 1. Download SonarQube server:
 2. Extract the download zip
 3. Run StartSonar.bat (located: ie. C:\apps\sonarqube-6.5\bin\windows-x86-64\StartSonar.bat)
