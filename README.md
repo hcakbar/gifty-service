@@ -1,6 +1,9 @@
 
 ### Gifty
 Services for gifty app. 
+
+```Java, Spring MVC, Maven```
+
 * APIs 
 1. Register events
 2. Send invitation
