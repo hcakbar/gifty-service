@@ -1,0 +1,18 @@
+{
+  "registryOwnerId": true,
+
+  "address": {
+    "id": "1234",
+    "addressLineOne": "123 Main Stree",
+    "addressLineTwo": "Suite 101",
+    "addressCity": "East",
+    "addressState": "Michigan",
+    "addressPostal": "12345",
+    "addressCountry": "US"
+  },
+  "contact": {
+    "id": "456",
+    "emailAddress": "test@test.com",
+    "phoneNumber": "8008008000"
+  }
+}
